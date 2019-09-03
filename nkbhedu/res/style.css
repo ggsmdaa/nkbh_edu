@@ -1,0 +1,1094 @@
+html {
+  overflow-x: hidden;
+  overflow-y: auto; 
+}
+
+/* 轮播使图片一直等比排满宽度 */
+.carousel-inner img {
+  width: 100%;
+}
+
+/* 滚动监控 */
+ul.nav-pills {
+  top: 40%;
+  right: 5%;
+  position: fixed;
+}
+
+/* 翻页栏居中 */
+.center {
+  margin: auto;
+  width: 10%;
+  padding: 10px;
+}
+/* 搜索框 */
+.search{
+  outline: none; 
+  overflow: hidden; 
+  width:220px;
+  height:30px;
+  z-index: 90;
+  display: flex;
+  display: -webkit-flex;
+}
+.search-input{
+  border: 0;  
+  outline: none;
+  -web-kit-appearance:none;
+  -moz-appearance: none;
+  background:rgba(4, 5, 53, 0.26);
+}
+.search-button-ico{
+  width:30px;
+  height:30px;
+  margin-left: 0px;
+  background: #f2eff3;
+  margin: auto;
+  text-align: center;
+  border-radius:2px;
+  padding:3px;
+  margin-left: 0px;
+  border: #aaa solid 1px;
+  border-left: none;
+}
+.search-button-ico a{
+  color: #afa3da;
+}
+.search-button-ico a:hover{
+  color:#6374a1;
+}
+.search-button-ico:hover{
+  background: #eaeef0;
+}
+
+
+/* 主要内容区域 */
+.main-content{
+  top: 0px;
+  width: 100%;
+  border-radius: 0px;
+  position: relative;
+  margin:50px;
+  min-height: 90px;
+  margin-top:25px;
+  margin-bottom:10px;
+}
+.main-content .listpage{
+  width: 85%;
+  margin: 0 auto;
+}
+
+/* 课程卡、文字卡主体 */
+.course-card-container{
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 4px 8px 0 rgba(7,17,27,.1);
+  float: left;
+  margin: 25px 20px;
+  min-height:245px;
+}
+/* 课程卡图片 */
+.course-card-container .course-card-img {
+  overflow: hidden;
+  color: #FFF;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  width: 305px;
+  height: 172px;
+}
+.course-card-img img{
+  width:100%;
+  height: 100%;
+}
+/* 课程卡内容 */
+.course-card-container .course-card-content {
+  background: #fff;
+  padding: 0px 22px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+/* 课程名 */
+.course-card-container .course-card-name {
+  padding-top: 10px;
+  font-size: 20px;
+  color: #07111b;
+  line-height:20px;
+  width:180px;
+}
+
+.course-card-container .course-card-info, .course-card-container p {
+  font-size: 12px;
+  color: #93999f;
+  line-height: 22px;
+  margin: 12px 0;
+}
+.course-card-container a{
+  text-decoration:none
+}
+
+.course-card-container .course-card-bottom {
+  font-size: 12px;
+  text-align: right;
+}
+.course-card-container .course-card-info {
+  float: left;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* 右下角悬浮框 回到顶部*/
+.go-top {
+  color: #b5aedd;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius:2px;
+  background-color: #e9f0f1;
+  position: fixed;
+  right: 15px;
+  bottom: 20px;
+  z-index: 20;
+  padding:8px;
+}
+
+
+/**
+* 课程分类-start
+**/
+.course-nav-row{
+  margin: 0 auto; 
+	width:85%;
+  border-bottom: 1px solid #d9dde1;
+  margin-top: 20px;
+	margin-bottom:5px;
+}
+
+.course-nav-row .hd{
+	float: left;
+	font-weight: bold;
+	font-size: 14px;
+	height: 35px;
+	line-height:30px;
+}
+.course-nav-row .course-nav{
+	float: left;
+	width: 100%;
+	text-align: left;
+	padding:0px;
+	padding-left:15px;
+}
+
+.course-nav-row .course-nav .course-nav-item{
+	float: left;
+	margin-right: 20px;
+	border-radius:4px;
+	margin-bottom: 10px;
+}
+.course-nav-row .course-nav .cur-course-nav{
+	background: #777777;
+}
+.course-nav-row .course-nav .cur-course-nav a{
+	color: #FFF;
+}
+.course-nav-item a{
+	padding:5px 10px;
+	color: #4d555d;
+}
+/**
+*课程分类-end
+**/
+
+
+/**
+*课程章节页面 start
+**/
+/* 左边章节 */
+.chapter-left{
+	margin-top:30px;
+	margin-left:50px;
+	width: 65%;
+	min-height:100px;
+}
+/* 课程介绍 */
+.main-course{
+  margin: auto;
+  margin-top: 2%;
+  width: 80%;
+  min-height: 250px;
+  padding:20px 30px; 
+  background:#ffffff;
+  border-radius:25px;
+}
+/* 课程标题 */
+.course-title {
+  line-height: 31px;
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  margin:20px;
+}
+.course_module_img{
+  width:305px;
+  height: 172px;
+}
+.radius-img{
+  border-radius: 8px;
+  width: 100%;
+  height:100%;
+}
+
+/* class页学习按钮 */
+.learn-btn {
+  border-radius:4px;
+  text-align: center;
+  background: #558aa7;
+  color: #ffffff;
+  width: 137px;
+  height: 48px;
+  line-height:48px;
+  font-size: 16px;
+  position: relative;
+}
+.learn-btn:hover{  
+  background: rgb(74, 68, 107);
+  color: white;
+  text-decoration:none;
+}
+/* 课程简介 */
+.course-brief{
+	margin-top: 15px;
+	letter-spacing: 1px;
+  line-height: 30px;
+}
+
+/* 课程内容、评价 */
+.class-container{
+  margin: 3% 1%;
+  margin-left: 5%;
+  width: 85%;
+  padding:20px 30px; 
+  background:#ffffff;
+  border:25px;
+  border-radius: 5px;
+}
+.class-container-bar a:hover{
+  background: #fff;
+  color: #4a446b;
+}
+/* 右边栏目 */
+.class-container-right{
+  margin:7% 10% 7% 5%;
+  padding:20px 30px; 
+  background:#ffffff;
+  border:25px;
+}
+
+/* 章节 */
+.chapter {
+	padding: 0px 10px 20px 10px;
+  border-bottom: 1px solid #eee;
+  background: #ffffff;
+}
+.chapter strong{
+  font-size: 16px;
+  color: #233142;
+}
+
+/* 箭头右对齐 */
+.chapter .drop-down{
+	float: right;
+	margin-top: 2px;
+	margin-right: 10px;
+	color: #474f85;
+}
+
+.chapter a{
+  text-decoration:none;
+  background: #fff;
+}
+.chapter a:hover{
+  text-decoration:none;
+  background: #fff;
+}
+
+.chapter-sub-li{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+  color: #000000;
+	margin-bottom: 1%;
+	list-style-type: none;
+	padding:5px 10px;
+}
+
+/**
+*评论-start
+**/
+.comment{
+	padding: 0px 10px 20px 10px;
+	border-bottom: 1px solid #eee;
+	margin: 20px 0px;
+	min-height: 120px;
+}
+.comment-header{
+	width: 40px;
+	height: 40px;
+	border-radius:50%;
+}
+.comment-main{
+	width: 100%;
+}
+.comment-main .label-title{
+	font-weight: bold;
+}
+.comment-main .user-name{
+	font-weight: bold;
+  font-size: 14px;
+  margin-left: 10px;
+}
+.comment-content{
+	margin-top: 20px;
+	width:100%;
+}
+/* 评论-end */
+
+
+/* 导航栏滑动效果-start */
+#wrapper {
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  padding-left: 0;
+  transition: all 0.5s ease;
+}
+#wrapper.toggled {
+  padding-left: 200px;
+}
+#wrapper.toggled #sidebar-wrapper {
+  width: 200px;
+}
+#wrapper.toggled #page-content-wrapper {
+  margin-right: -200px;
+  position: absolute;
+}
+#sidebar-wrapper {
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  background: #d6c8ff;
+  height: 100%;
+  left: 200px;
+  margin-left: -200px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: all 0.5s ease;
+  width: 0;
+  z-index: 1000;
+}
+#sidebar-wrapper::-webkit-scrollbar {
+  display: none;
+}
+#page-content-wrapper {
+  margin-top: 0px;
+  width:5%;
+  height:100%;
+  position: relative;
+}
+/* 导航栏滑动效果-end */
+
+/*  导航栏样式-start*/
+.sidebar-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 220px;
+}
+.sidebar-nav li {
+  display: inline-block;
+  line-height: 20px;
+  position: relative;
+  width: 100%;
+}
+.sidebar-nav li:before {
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transition: width 0.2s ease-in;
+  transition: width 0.2s ease-in;
+  width: 3px;
+  z-index: -1;
+}
+.sidebar-nav li:nth-child(2):before {
+  background: #c58deb;
+}
+.sidebar-nav li:nth-child(3):before {
+  background: #b882ee;
+}
+.sidebar-nav li:nth-child(4):before {
+  background: #9d78da;
+}
+.sidebar-nav li:nth-child(5):before {
+  background: #9269f3;
+}
+.sidebar-nav li:nth-child(6):before {
+  background: #8a6bd3 ;
+}
+.sidebar-nav li:hover:before,
+.sidebar-nav .nav-second-color li:hover:before{
+  -webkit-transition: width 0.2s ease-in;
+  transition: width 0.2s ease-in;
+  width: 100%;
+}
+.sidebar-nav li a,
+.sidebar-nav .nav-second-color li a{
+  color: #303a52;
+  display: block;
+  padding: 10px 15px 10px 30px;
+  text-decoration: none;
+}
+.sidebar-nav li.open:hover before,
+.sidebar-nav .nav-second-color li.open:hover before{
+  -webkit-transition: width 0.2s ease-in;
+  transition: width 0.2s ease-in;
+  width: 100%;
+}
+.sidebar-nav li a:hover,
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus,
+.sidebar-nav li.open a:hover,
+.sidebar-nav li.open a:active,
+.sidebar-nav li.open a:focus,
+.sidebar-nav .nav-second-color li a:hover,
+.sidebar-nav .nav-second-color li a:active,
+.sidebar-nav .nav-second-color li a:focus,
+.sidebar-nav .nav-second-color li.open a:hover,
+.sidebar-nav .nav-second-color li.open a:active,
+.sidebar-nav .nav-second-color li.open a:focus{
+  background: transparent;
+  color: #ffffff;
+  text-decoration: none;
+}
+.sidebar-nav  .sidebar-brand {
+  font-size: 20px;
+  height: 65px;
+  line-height: 44px;
+}
+/* .sidebar-nav .nav-second-color{
+
+} */
+.sidebar-nav .nav-second-color li:nth-child(1):before {
+  background: #7d34ad;
+}
+.sidebar-nav .nav-second-color li:nth-child(2):before {
+  background: #68349c;
+}
+.sidebar-nav .nav-second-color li:nth-child(3):before {
+  background: #48297a;
+}
+.sidebar-nav .nav-second-color li:nth-child(4):before {
+  background: #543b91;
+}
+
+
+/* 导航栏样式-end*/
+
+/* 按钮交互-start */
+.hamburger {
+  background-color: #878ecd;
+  border: none;
+  border-radius:2px;
+  position: fixed;
+  z-index: 999;
+  color: #bdf0ff5b;
+  height: 100%;
+  /* margin-top:0px;
+  padding-top:-10px; */
+}
+.hamburger:hover {
+  color: #fff;
+}
+.hamburger:focus {
+  outline: none;
+}
+.hamburger:active {
+  outline: none;
+}
+/* 按钮交互-end */
+
+.overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/* 二级隐藏课程-start */
+#hide_course {
+  position: relative;
+  width: 300px;
+  margin-top:0px;
+  padding-left: 15px;
+}
+/* #course_click{
+
+} */
+.hide_charpter{
+  padding: 20px 15px 20px 5px;
+  background: #ffffff;
+  word-wrap:break-word;
+  z-index:5;
+}
+
+.hide_charpter .course ul{
+  width:90%;
+}
+.hide_charpter .course a{
+  text-decoration:none;
+	color: #666666;
+}
+.hide_charpter .course a:visited{
+  text-decoration:none;
+	color: #868686;
+}
+.hide_charpter .course a:hover {
+  text-decoration:none;
+  color: #ab99b3;
+}
+.hide_charpter .course a:active{
+  text-decoration:none;
+  color: #85529b;
+}
+/* 二级隐藏课程-end */
+
+.learn-annocement-main{
+  display: flex;
+  display: -webkit-flex; 
+  align-items: flex-start;
+  width:100%;
+  height:100%;
+  position: relative;
+}
+.learn-annocement-main .left{
+  flex: 0 0 60%;
+  margin: 10% 2% 5% 8%;
+}
+.learn-annocement-main .right{
+  flex: 0 0 25%;
+  width:200px;
+  margin: 10% 3% 5% 2%;
+}
+.welcome{
+  width:100%;
+  height:100%;
+  background-color: #e4f9f5;
+  box-shadow: 0px 1px 2px #e0e0e0;
+  /* "border-width" 属性 如果单独使用则不起作用。要先使用 "border-style" 属性来设置边框。 */
+  border-style: none none none solid;
+  border-width:10px;
+  border-color:#ffe2e2;
+  color: #1a2a3a;
+  display: flex;
+  display: -webkit-flex; 
+  align-items:flex-end;
+}
+
+.welcome_card{
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  flex: 1;
+}
+.welcome_card a {
+  color: #3ec1d3;
+}
+.welcome_card a:hover {
+  color: #9744b8;
+}
+.welcome_card a:active{
+  color: #ffffffd2;
+}
+.welcome .btn{
+  flex: 0 0 20%;
+  background-color: #d2ffd2;
+  width: 50px;
+  height: 100%;
+  font-size: 16px;
+  position: relative;
+  margin: 2%;
+  border-radius: 5px;
+  color: #086369;
+  text-align: center;
+  box-shadow: 1px 1px 1px #bbbbbb;
+}
+
+.welcome .btn:hover{  
+  background: #968dcc;
+  color: #caeeee;
+}
+.welcome .btn:active{  
+  color: #ffffff;
+}
+
+.annocement{
+  min-height: 120px;
+  width: 100%;
+  margin-top: 3%;
+  border-radius: 2px;
+}
+.annocement h1{
+  color: #000;
+  text-align: center;
+}
+.annocement .content-main{
+  padding: 0px 10px 20px 10px;
+  border-radius:3px;
+  box-shadow: 1px 1px 2px #aaaaaa;
+  background-color: #fff;
+  margin: 20px;
+  padding: 10px 20px;
+}
+.annocement .content-main .title h2{
+  color: #000;
+}
+.annocement .content-main .main{
+  color: #00040c;
+}
+.update{
+  width: 100%;
+  background-color: #e6fae3;
+  /* background-image: linear-gradient( 135deg, #7889d3 10%, #4c00ff 100%); */
+  box-shadow: 1px 2px 3px #e5e7f1;
+  padding: 10px 5px;
+  overflow:hidden;
+  margin:15% 0%;
+  border-radius:3px;
+  border: #dcfad7 1px solid;
+}
+.update h4{
+  color: #060111;
+  text-align: center;
+}
+.update ul{
+  width:90%;
+  word-wrap:break-word;
+  margin-left:-10px;
+}
+.update a{
+  text-decoration:none;
+	color: #1a2a3a;
+}
+.update a:visited{
+  text-decoration:none;
+	color: #868686;
+}
+.update a:hover {
+  text-decoration:none;
+  color: #ab99b3;
+}
+.update a:active{
+  text-decoration:none;
+  color: #85529b;
+}
+
+.course-info{
+	width:100%;
+	min-height: 210px;
+	border-bottom: 1px solid #d9dde1;
+	padding-bottom:15px;
+}
+.course-info .course-title {
+  margin-bottom: 20px;
+  line-height: 31px;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+/* 课程视频页 */
+.course-video{
+  margin-top:0px;
+  text-align: center;
+  width:85%;
+  margin:auto;
+}
+.course-video p{
+  font-size:30px;
+  color:#050113;
+  padding-top:20px;
+}
+.course-video video{
+  width:90%;
+  border: #6f2b7c solid 1px;
+}
+
+.course_information{
+  padding-top: 10%;
+  padding-left: 15%;
+  word-wrap:break-word;
+  margin:auto;
+  color:#69779b;
+  width:80%;
+}
+.course_information ol{
+  border:2px solid #fff;
+  border-radius:3px;
+  box-shadow: 1px 1px 2px #aaaaaa;
+  margin-right: 30%;
+  padding: 2% 5%;
+}
+#course_pdf{
+  margin:auto;
+  width:70%;
+  padding-top:5%;
+  min-height: 700px;
+}
+/* 提交按钮 */
+.btn {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 1px;
+  }
+.commend-announce{
+  width:65%; 
+  margin:auto; 
+  padding: 5% 3%;
+  margin-bottom: 0px;
+}
+.old-comment-full{
+  width:80%; 
+  padding:5%; 
+  margin:auto;
+  margin-top:0px;
+}
+.old_comment{
+  margin:auto;
+  width:85%;
+  padding: 30px;
+  color:#010518;
+  background: #ffffff;
+  border-radius:3px;
+  box-shadow: 1px 1px 2px #d4d4d4;
+  position: relative;
+  margin-bottom: 20px;
+}  
+.old_comment-main{
+    width: 100%;
+    color: #000;
+
+  }
+  /* .old_comment-main .label-title{
+    font-weight: bold;
+  }  */
+ .old_comment-main .header{
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+  }
+  .old_comment-main .user-name{
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 10px;
+    color: #000;
+  }
+  .old_comment-content{
+    padding-top: 20px;
+    width:100%;
+  }
+
+  .myclass-main{
+    display: flex;
+    display: -webkit-flex;
+    width:100%;
+    height: 100%;
+    margin: auto;
+    padding: 5%;
+    /* background: #ffffff; */
+  }
+  .user-navigation{
+    flex:0 0 20%;
+    display: flex;
+    display: -webkit-flex;
+    padding: 20px;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #ffffff;
+    border-radius: 5px;
+    
+  }
+
+  .user-navigation ul{
+    list-style: none;
+    width: 100%;
+  }
+  .user-navigation li{
+    font-size:18px;
+    padding:20px 0px;
+  }
+  .user-navigation a{
+    text-decoration:none;
+    color:#52616b;
+  }
+  .user-navigation a:hover{
+    color: #7f6b97;
+  }
+  .my-course-main{
+    flex:1;
+    margin-left: 2%;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction:column;
+    background-color: #ffffffe3;
+    border-radius: 5px;
+  }
+  .my-course-card{
+    display: flex;
+    display: -webkit-flex;
+    align-items:flex-end;
+    width:96%;
+    position: relative;
+    box-shadow: 1px 1px 5px #f1f1f1;
+    margin:2%;
+    padding:20px;
+  }
+  .my-course-card .picture{
+    flex:0 0 30%;
+    padding:2%;
+    position: relative;
+  }
+  .my-course-card .course-content{
+    flex:1;
+    margin: auto;
+    position: relative;
+  }
+  .course-content h4{
+    margin-top:2%;
+    color: #07111b;
+  }
+.progress-border{
+    border: 1px solid #00a2ff ;
+    border-radius: 3px;
+    width: 100%;
+    height:8px;
+    margin-top: 1%;
+  }
+.bar{
+    z-index: 999;
+    height: 6px;
+    background-color: #76afdd;
+    border-radius: 2px;
+    position: absolute;
+    /* absolute 定位 绝对定位的元素的位置相对于最近的已定位父元素，如果元素没有已定位的父元素，那么它的位置相对于<html>: */
+  }
+  .user-learn-btn{
+    display: inline-block;
+    position: relative;
+    align-self:flex-end;
+    /* flex 设置单独底部对齐 */
+    background: #558aa7;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    height: 35px;
+    width:25%;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 72%;
+    border-radius: 5px;
+  }
+  .user-learn-btn:hover{
+    background-color: #1c2057;
+  }
+
+/* 登录页面 */
+.logo_box{
+	position: absolute;
+  height: 65%;
+  width:34%;
+  margin-left:33%;
+  margin-top:11%;
+}
+.logo_box h3{
+	text-align: center;
+	font-size: 30px ;
+	color: #35234b;
+  line-height: 20px;
+  padding-bottom: 10px;
+}
+.logo_box p{
+  text-align: center;
+  color: #35234b;
+  font-size:10px;
+  padding-bottom: 20px;
+}
+.input_outer{
+	height: 46px;
+	padding: 0 5px;
+	margin-bottom: 30px;
+	border-radius: 50px;
+	position: relative;
+	border:#d3d3d3 2px solid ;
+}
+.user-name-ico{
+	width: 25px;
+	height: 25px;
+	position: absolute;
+  margin: 10px 13px;
+  color: #c5c5c5;
+}
+.user-psd-ico{
+	width: 25px;
+	height: 25px;
+	position: absolute;
+  margin: 10px 13px;
+  color:#c5c5c5;
+}
+/* .user-mail{
+	width: 25px;
+	height: 25px;
+	position: absolute;
+  margin: 10px 13px;
+  color:#020e20;
+} */
+/* .l-login{
+	position: absolute;
+	z-index: 1;
+	left: 50px;
+	top: 0;
+	height: 46px;
+	font: 14px "microsoft yahei",Helvetica,Tahoma,Arial,"Microsoft jhengHei";
+	line-height: 46px;
+} */
+.text{
+	width: 220px;
+	height: 46px;
+	outline: none;
+	margin-left: 50px;
+	border: none;
+	background: none;
+  line-height: 46px;
+  color: #000000;
+  background-color: transparent;
+}
+.login_btn input{
+  border: 0;  
+  outline: none;
+  -web-kit-appearance:none;
+  -moz-appearance: none;
+  /* 以上是清除inpit的默认样式 */
+  margin-bottom: 10px;
+  display:block;
+  text-decoration:none;
+  width:100%;
+  line-height: 20px;
+	text-align: center;
+	font-size: 20px;
+	border-radius: 50px;
+  background: #7e8ac2;
+  padding: 15px;
+	margin-top: 25px;
+  display: block;
+  color:#ffffff;
+}
+.login_btn input:hover{
+  background-color: #98a2cc;
+  color:#ebebeb;
+}
+.login_btn input:active{
+  background: #7e8ac2;
+  color:#ffffff;
+}
+.log_or_reg{
+  color:#63b9a0;
+  float:right;
+}
+.log_or_reg:hover{
+  color:#ce8b64;
+  text-decoration: none;
+}
+
+.login_time{
+  width: 100px;
+  height: 20px;
+  border-radius: 5px;
+  position: relative;
+  float: right;
+  margin:0px;
+}
+.login_time select{
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 15px;
+  background-color: #d4d6ec5b;
+  color:#35234b;
+}
+.login_time option{
+  background: #d4d6ec5b;
+}
+
+.register_box{
+  width:600px;
+  text-align: center;
+  background: #ffffffa1;
+  border-radius: 20px;
+  color:#33313b;
+  margin:auto;
+  padding-bottom: 30px;
+}
+.register_box form{
+  text-align: left;
+  position: relative;
+  margin-left: 150px;
+}
+.register_box label{
+  width:80px;
+  text-align: right;
+}
+.register_box input{
+  width:220px;
+}
+.register_input input{
+  border: 0;  
+  outline: none;
+  -web-kit-appearance:none;
+  -moz-appearance: none;
+  /* 以上是清除inpit的默认样式 */
+  display:block;
+  text-decoration:none;
+  width:70px;
+	text-align: center;
+	font-size: 15px;
+	border-radius: 5px;
+  background: #899ed8;
+  margin-left:230px;
+  margin-top:10px;
+  padding: 5px;
+  display: block;
+  color:#ffffff;
+}
+.register_box a{
+  text-decoration:none;
+  color:#52616b;
+  font-size: 6px;
+  margin-left:200px;
+}
+.register_box a:hover{
+  color: #7f6b97;
+}
+.register_box h3{
+  padding-top:30px;
+}

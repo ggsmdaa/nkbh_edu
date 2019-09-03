@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>.org.eclipse.dltk.core.external.folders</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>.link3</name>
+			<type>2</type>
+			<location>C:/Users/79813/Desktop/study/GraduationProject/works/let_it_beautiful/www/nkbhedu/.metadata/.plugins/org.eclipse.php.core/__language__/3fb6852b</location>
+		</link>
+		<link>
+			<name>.link4</name>
+			<type>2</type>
+			<location>C:/Users/79813/Desktop/study/GraduationProject/works/let_it_beautiful/www/nkbhedu/.metadata/.plugins/com.zend.php.core/__language__/6939fd50</location>
+		</link>
+		<link>
+			<name>.link5</name>
+			<type>2</type>
+			<location>C:/Users/79813/Desktop/study/GraduationProject/works/let_it_beautiful/www/nkbhedu/.metadata/.plugins/com.zend.php.core/__language__/9a651389</location>
+		</link>
+	</linkedResources>
+</projectDescription>
